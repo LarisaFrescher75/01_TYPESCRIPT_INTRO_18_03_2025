@@ -1,5 +1,3 @@
-var age = 30; // числа до 2 в 53 степени(а также  NaN)
-// age = '50' - ошибка типизации
 var age1 = 30;
 age1 = '50';
 // пример неявной типизации
@@ -16,22 +14,22 @@ console.log("Hello");
 // Переменные разных типов
 //let productName = "Laptop"; // Название товара
 var productName = "Laptop";
-//let price = 1499.99; // Цена товара
 var price = 1499.99;
-//let inStock = true; // Есть ли товар в наличии
-var inStock = true;
-inStock = false;
-//let discount = null; // Скидка пока не установлена
+var inStrock = true;
 var discount = null;
-//let warranty; // Переменная без значения (undefined)
 var warranty;
-// Переменная, которая может быть числом или строкой
 var productCode = 1010;
-//productCode = "A1010";
+productCode = "A1010";
+if (!discount) {
+    discount = 5;
+}
+if (!warranty) {
+    discount = 5;
+}
 // Массив чисел (цены товаров)
 var prices = [499, 1299, 799, 2499, 1599];
-// prices.push("2000"); // Ошибка должна быть в TS
-// Массив строк (названия товаров)
+//prices.push("2000"); // Ошибка должна быть в TS
+// // Массив строк (названия товаров)
 var products = ["Phone", "Tablet", "Monitor", "Keyboard", "Mouse"];
 // Массив, содержащий только числа или только строки
 var ids1 = ["ID001", "ID002", "ID003"]; // Только строки
@@ -40,3 +38,16 @@ var ids2 = [101, 102, 103]; // Только числа
 var mixedValues = [1, "two", 3, "four", 5, "six"];
 // Массив булевых значений
 var toggles = [true, false, false, true, true];
+// type Person = {
+//     name: string,
+//     age: number
+// }
+var person = {
+    name: "Bill",
+    age: 38
+};
+var direction = 'left';
+direction = 'right';
+direction = 'up';
+direction = 'down';
+//direction = 'eight';
